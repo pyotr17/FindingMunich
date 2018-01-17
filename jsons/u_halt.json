@@ -1,0 +1,1449 @@
+var u_halt = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sendlinger Tor",
+        "line": "1,2,3,6,7,8",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5667259,
+          48.1333921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Westpark",
+        "line": 6,
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5166828,
+          48.1178542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Therese-Giehse-Allee",
+        "line": 5,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.642726361751556,
+          48.09471167025082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Forstenrieder Allee",
+        "line": 3,
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4993303,
+          48.0950104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harras",
+        "line": "6  S7 R",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5379444,
+          48.1168324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Partnachplatz",
+        "line": 6,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5266191,
+          48.116899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garching-Hochbruck",
+        "line": 6,
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6310568,
+          48.2473514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Goetheplatz",
+        "line": "3,6",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5576102,
+          48.1290795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karlsplatz (Stachus)",
+        "line": "4,5  S1,2,3,4,6,7,8",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5669662,
+          48.1404283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Theresienwiese",
+        "line": "4,5",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5521165,
+          48.1357205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bohmerwaldplatz",
+        "line": 4,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.615692,
+          48.1434646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Richard-Strauss-Strase",
+        "line": 4,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.616619,
+          48.1483306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prinzregentenplatz",
+        "line": 4,
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6071108,
+          48.1392379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arabellapark",
+        "line": 4,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6220687,
+          48.1534607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kieferngarten",
+        "line": 6,
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6132286,
+          48.2038679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Furstenried West",
+        "line": 3,
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.480886,
+          48.0882863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giesing",
+        "line": "2,7  S3,7",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.595709919929504,
+          48.11099516993576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Scheidplatz",
+        "line": "2,3,8",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5728125,
+          48.1715437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Neuperlach Zentrum",
+        "line": "5,7",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.646186411380768,
+          48.101165862208234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Freimann",
+        "line": 6,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6143843,
+          48.1919691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nordfriedhof",
+        "line": 6,
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5969722,
+          48.1731431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trudering",
+        "line": "2  S4,6",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.662215292453766,
+          48.12571412261942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aidenbachstrase",
+        "line": 3,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5251527,
+          48.0978284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garching-Forschungszentrum",
+        "line": 6,
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6714828,
+          48.2646907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garching",
+        "line": 6,
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6525289,
+          48.2491904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Neuperlach Sud",
+        "line": "5  S7",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.64500892162323,
+          48.08896795834975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Westendstrase",
+        "line": "4,5",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5214769,
+          48.1346845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ostbahnhof",
+        "line": "5  S1,2,3,4,6,7,8  R",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6037297,
+          48.1280409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Schwanthalerhohe",
+        "ring": "1/2",
+        "line": "4,5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5410435,
+          48.1337152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laimer Platz",
+        "line": 5,
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5019736,
+          48.1354075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Frottmaning",
+        "line": 6,
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6166653,
+          48.2118542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heimeranplatz",
+        "line": "4,5  S7,20  R",
+        "ring": 2,
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5323102,
+          48.1334938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lehel",
+        "line": "4,5",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5877257,
+          48.1395977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Max-Weber-Platz",
+        "line": "4,5",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5986919,
+          48.1356267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Odeonsplatz",
+        "line": "3,4,5,6",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.57758355140686,
+          48.14268760877063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Josephsplatz",
+        "line": "2,8",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5671573,
+          48.1556853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Olympia-Einkaufszentrum",
+        "line": "1,3,7",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.529671251773834,
+          48.182047637079464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Georg-Brauchle-Ring",
+        "line": "1,7",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5291483,
+          48.1772646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Westfriedhof",
+        "line": "1,7",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5284013,
+          48.1701698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gern",
+        "line": "1,7",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5291874,
+          48.1629331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rotkreuzplatz",
+        "line": "1,7",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5328815,
+          48.1541081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Friedenheimer Strase",
+        "line": 5,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5108479,
+          48.1350609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Implerstrase",
+        "line": "3,6",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.54834,
+          48.1201399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moosach",
+        "line": "3  S1  R",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5081649,
+          48.1808756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karl-Preis-Platz",
+        "line": "2,7",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6083929,
+          48.117825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "",
+        "name": "Untersbergstrase",
+        "line": "2,7",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.587526500225067,
+          48.11257112312227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "",
+        "name": "Silberhornstrase",
+        "line": "2,7",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.580914855003357,
+          48.11475230585901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Michaelibad",
+        "line": "5,7",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.631833910942078,
+          48.11833726712453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quiddestrase",
+        "line": "5,7",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.646690666675566,
+          48.108093857003695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Feldmoching",
+        "line": "2  S1  R",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5409861,
+          48.2137267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hasenbergl",
+        "line": 2,
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5549012,
+          48.2133756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dulferstrase",
+        "line": 2,
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5634699,
+          48.21241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harthof",
+        "line": 2,
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5694736,
+          48.2042231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Am Hart",
+        "line": 2,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5718957,
+          48.1959306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Frankfurter Ring",
+        "line": 2,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5726388,
+          48.1868118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Milbertshofen",
+        "line": 2,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5732308,
+          48.180942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moosacher Sankt-Martins-Platz",
+        "line": 3,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5188183,
+          48.1817967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oberwiesenfeld",
+        "line": 3,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5476204,
+          48.1860724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Olympiazentrum",
+        "line": "3,8",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5559768,
+          48.1792765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bonner Platz",
+        "line": 3,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5782579,
+          48.1667523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Poccistrase",
+        "line": "3,6",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5503158,
+          48.1254457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munchner Freiheit",
+        "line": "3,6",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5862668,
+          48.1614617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giselastrase",
+        "line": "3,6",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5841078,
+          48.1565455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitat",
+        "line": "3,6",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5812227,
+          48.1503374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Holzapfelkreuth",
+        "line": 6,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5022728,
+          48.1162216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haderner Stern",
+        "line": 6,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4889088,
+          48.1183173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Klinikum Groshadern",
+        "line": 6,
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4736348,
+          48.1089975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Groshadern",
+        "line": 6,
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4769673,
+          48.1148119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dietlindenstrase",
+        "line": 6,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.590775,
+          48.167172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marienplatz",
+        "line": "3,6  S1,2,3,4,6,7,8",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.576242446899414,
+          48.1382845645715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Obersendling",
+        "line": "3  S7,20  R",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5359539,
+          48.0981708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Basler Strase",
+        "line": 3,
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4911079,
+          48.0913057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Machtlfinger Strase",
+        "line": 3,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5149791,
+          48.0973035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Thalkirchen (Tierpark)",
+        "line": 3,
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5458861,
+          48.1028318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brudermuhlstrase",
+        "line": 3,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5488311,
+          48.1125491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kolumbusplatz",
+        "line": "1,2,7",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.576668918132782,
+          48.119889717684636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Innsbrucker Ring",
+        "line": "2,5,7",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.618742048740387,
+          48.12041614355545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fraunhoferstrase",
+        "line": "1,2,7",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5741625,
+          48.1292965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moosfeld",
+        "line": 2,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.670980751514433,
+          48.13076271884375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Messestadt Ost",
+        "line": 2,
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.703411340713501,
+          48.13336380536377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Messestadt West",
+        "line": 2,
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.69055014848709,
+          48.13341034803828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hauptbahnhof",
+        "line": "1,2,4,5,7  S1,2,3,4,6,7,8  R",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5610481,
+          48.1400196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Theresienstrase",
+        "line": "2,8",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5645546,
+          48.1515204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hohenzollernplatz",
+        "line": "2,8",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5688536,
+          48.162355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mangfallplatz",
+        "line": 1,
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5791654,
+          48.0971291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sankt-Quirin-Platz",
+        "line": 1,
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5814736,
+          48.1044572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wettersteinplatz",
+        "line": 1,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5757062,
+          48.1081784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Candidplatz",
+        "line": 1,
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.571645140647888,
+          48.11304031802956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stiglmaierplatz",
+        "line": "1,7",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5570151,
+          48.1478262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maillingerstrase",
+        "line": "1,7",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5455834,
+          48.1499372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kreillerstrase",
+        "line": 2,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.64674699306488,
+          48.12575530112081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "",
+        "name": "Josephsburg",
+        "line": 2,
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.633824110031126,
+          48.12655021876487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Petuelring",
+        "line": "3,8",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5659045,
+          48.1757291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Konigsplatz",
+        "line": "2,8",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5631499,
+          48.1450416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Studentenstadt",
+        "line": 6,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6079627,
+          48.1837124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alte Heide",
+        "line": 6,
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6026286,
+          48.1785212
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2241 @@
+var s_halt = {
+  "type": "FeatureCollection",
+  "features": [ 
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Starnberg",
+        "line": "S6  R",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3438719,
+          47.9959295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gauting",
+        "line": "S6",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3761886,
+          48.0707134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Freising",
+        "line": "S1  R",
+        "ring": "12/13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7445653,
+          48.3951508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eichenau",
+        "line": "S4",
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3278593,
+          48.1794347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kreuzstrase",
+        "line": "S7  R",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7594933,
+          47.9171236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oberschleisheim",
+        "line": "S1",
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5577004,
+          48.256922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unterschleisheim",
+        "line": "S1",
+        "ring": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5685773,
+          48.2736758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mammendorf",
+        "line": "S3  R",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1760965,
+          48.2168683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maisach",
+        "line": "S3",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2556124,
+          48.214243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Esting",
+        "line": "S3",
+        "ring": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3169531,
+          48.212204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Olching",
+        "line": "S3",
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3354625,
+          48.2100075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lochhausen",
+        "line": "S3",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4088236,
+          48.1759748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Langwied",
+        "line": "S3",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4324517,
+          48.1630442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hirschgarten",
+        "line": "S1,2,3,4,6,8",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5194685,
+          48.143552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laim",
+        "line": "S1,2,3,4,6,8",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5038355,
+          48.1443523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Donnersbergerbrucke",
+        "line": "S1,2,3,4,6,7,8  R",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5365226,
+          48.1426694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hackerbrucke",
+        "line": "S1,2,3,4,6,7,8 ",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.548527,
+          48.1419636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hauptbahnhof",
+        "line": "S1,2,3,4,6,7,8   R",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5552964,
+          48.1408434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riem",
+        "line": "S2",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6777725,
+          48.1439688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Feldkirchen",
+        "line": "S2",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7321017,
+          48.151842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heimstetten",
+        "line": "S2",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7594112,
+          48.1587089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karlsplatz (Stachus)",
+        "line": "S1,2,3,4,6,7,8",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.565622,
+          48.1394857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giesing",
+        "line": "S3,7",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5960835,
+          48.1111299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rosenheimer Platz",
+        "line": "S1,2,3,4,6,7,8",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5930749,
+          48.1291844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Isartor",
+        "line": "S1,2,3,4,6,7,8",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5831361,
+          48.1342128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baldham",
+        "line": "S4,6",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7870376,
+          48.0992017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pasing",
+        "line": "S3,4,6,8,20  R",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4617667,
+          48.1499561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aying",
+        "line": "S7",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7692669,
+          47.9689954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hohenbrunn",
+        "line": "S7",
+        "ring": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6987991,
+          48.0465741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hohenkirchen-Siegertsbrunn",
+        "line": "S7",
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7191892,
+          48.0186515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Neubiberg",
+        "line": "S7",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6602147,
+          48.0758576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Neuperlach Sud",
+        "line": "S7",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6450199,
+          48.0888217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perlach",
+        "line": "S7",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6315196,
+          48.0934102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deisenhofen",
+        "line": "S3  R",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5836136,
+          48.0194606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Holzkirchen",
+        "line": "S3  R",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6973194,
+          47.8844678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Altomunster",
+        "line": "S2",
+        "ring": "12/13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2550326,
+          48.3849954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dachau",
+        "line": "S2  R",
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4442831,
+          48.2546558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Petershausen",
+        "line": "S2  R",
+        "ring": "12/13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4700551,
+          48.4135125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rohrmoos",
+        "line": "S2",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4447409,
+          48.3336745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hebertshausen",
+        "line": "S2",
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4555066,
+          48.2909763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karlsfeld",
+        "line": "S2",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4596757,
+          48.2112226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Geltendorf",
+        "line": "S4  R",
+        "ring": "12/13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0373735,
+          48.1060414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grafrath",
+        "line": "S4",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1530653,
+          48.1320277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allach",
+        "line": "S2",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4681053,
+          48.1900336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Untermenzing",
+        "line": "S2",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4726759,
+          48.1777155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buchenau",
+        "line": "S4",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2245736,
+          48.1603391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Furstenfeldbruck",
+        "line": "S4",
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2623294,
+          48.1717756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puchheim",
+        "line": "S4",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3534979,
+          48.1719408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leuchtenbergring",
+        "line": "S2,4,6,8",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6159941,
+          48.1342868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leienfelsstrase",
+        "line": "S4",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.42858,
+          48.1545345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Markt Schwaben",
+        "line": "S2  R",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8619398,
+          48.193382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ottenhofen",
+        "line": "S2",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8793821,
+          48.2181796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Altenerding",
+        "line": "S2",
+        "ring": 12
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9017773,
+          48.2936849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trudering",
+        "line": "S4,6",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6633383,
+          48.1260355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zorneding",
+        "line": "S4,6",
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8324234,
+          48.0895421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eglharting",
+        "line": "S4,6",
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8639275,
+          48.0824675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kirchseeon",
+        "line": "S4,6",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8872843,
+          48.0709848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ebersberg",
+        "line": "S4,6  R",
+        "ring": "11/12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9705849,
+          48.0749425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tutzing",
+        "line": "S6  R",
+        "ring": "12/13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2728014,
+          47.9071073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stockdorf",
+        "line": "S6",
+        "ring": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4010832,
+          48.0935142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flughafen Munchen",
+        "line": "S1,8",
+        "ring": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7861263,
+          48.3537694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Planegg",
+        "line": "S6",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4137456,
+          48.1054555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Neufahrn",
+        "line": "S1",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6618917,
+          48.3219616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eching",
+        "line": "S1",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.616758,
+          48.3029797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Westkreuz",
+        "line": "S6,8",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4437634,
+          48.1488968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Feldmoching",
+        "line": "S1 R",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5412753,
+          48.2138036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fasanerie",
+        "line": "S1",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5258659,
+          48.1977752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moosach",
+        "line": "S1  R",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5061222,
+          48.1801657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mittersendling",
+        "line": "S7,20  R",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.536379,
+          48.1077964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siemenswerke",
+        "line": "S7,20  R",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5327302,
+          48.0943067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Solln",
+        "line": "S7,20  R",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5269373,
+          48.0799367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ismaning",
+        "line": "S8",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.679452,
+          48.2257986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Daglfing",
+        "line": "S8",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6493051,
+          48.1496375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Freiham",
+        "line": "S8",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4100699,
+          48.1400082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Neuaubing",
+        "line": "S8",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4220848,
+          48.1416904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Germering-Unterpfaffenhofen",
+        "line": "S8",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3640209,
+          48.1288545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gilching-Argelsried",
+        "line": "S8",
+        "ring": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2998358,
+          48.1057939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Neugilching",
+        "line": "S8",
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2889784,
+          48.0991526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wesling",
+        "line": "S8",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2520169,
+          48.0774385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seefeld-Hechendorf",
+        "line": "S8",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1988718,
+          48.0415719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Herrsching",
+        "line": "S8",
+        "ring": "12/13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1703947,
+          47.9984622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wolfratshausen",
+        "line": "S7",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4271034,
+          47.9145344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Icking",
+        "line": "S7",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4366558,
+          47.9532071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ebenhausen-Schaftlarn",
+        "line": "S7",
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4537042,
+          47.9787164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baierbrunn",
+        "line": "S7",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4800232,
+          48.0186891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hollriegelskreuth",
+        "line": "S7,20",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5096112,
+          48.0433039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Groshesselohe Isartalbahnhof",
+        "line": "S7,20",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5309003,
+          48.0711623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unterfohring",
+        "line": "S8",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6468943,
+          48.1902438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Johanneskirchen",
+        "line": "S8",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6460093,
+          48.1676081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haar",
+        "line": "S4,6",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7309706,
+          48.1113153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Obermenzing",
+        "line": "S2",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4780215,
+          48.1642173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grafing Bahnhof",
+        "line": "S4,6  R",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.940171,
+          48.0434247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marienplatz",
+        "line": "S1,2,3,4,6,7,8",
+        "ring": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5753989,
+          48.1371436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berg am Laim",
+        "line": "S2,4,6",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6336,
+          48.133971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malching",
+        "line": "S3",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2178227,
+          48.2154441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heimeranplatz",
+        "line": "S7,20  R",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5322141,
+          48.133541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ostbahnhof",
+        "line": "S1,2,3,4,6,7,8",
+        "ring": "1/2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.605660915374756,
+          48.12748655867704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erding",
+        "line": "S2",
+        "ring": "12/13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9120362,
+          48.3033184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pulling",
+        "line": "S1",
+        "ring": "11/12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.707082564680764,
+          48.36336776642789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lohhof",
+        "line": "S1",
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.581129100000116,
+          48.288251500000115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dachau Stadt",
+        "line": "S2",
+        "ring": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.439838404272246,
+          48.26656597930186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bachern",
+        "line": "S2",
+        "ring": 8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.381763300000102,
+          48.27905010000011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vierkirchen-Esterhofen",
+        "line": "S2",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.444868600000069,
+          48.360334499999965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Schwabhausen",
+        "line": "S2",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.364983199999925,
+          48.300978699999966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Niederroth",
+        "line": "S2",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.390127700000106,
+          48.32112369999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Markt Indersdorf",
+        "line": "S2",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.378797099999982,
+          48.35244730000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arnbach",
+        "line": "S2",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.343707399999916,
+          48.34120300000012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erdweg",
+        "line": "S2",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.304231400000049,
+          48.33311809999998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kleinberghofen",
+        "line": "S2",
+        "ring": "11/12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.275787700000086,
+          48.3534795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gernlinden",
+        "line": "S3",
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.297510388917491,
+          48.21288435110234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grobenzell",
+        "line": "S3",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.373225499999986,
+          48.195425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St.-Martin-Strase",
+        "line": "S3,7",
+        "ring": "2/3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.595828200000025,
+          48.118448500000106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fasangarten",
+        "line": "S3",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.605784400000124,
+          48.093325717844145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fasanenpark",
+        "line": "S3",
+        "ring": "3/4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.609488399999979,
+          48.079589017844114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unterhaching",
+        "line": "S3",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.612453900000052,
+          48.066199417844125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Taufkirchen",
+        "line": "S3",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.609334300000059,
+          48.05149411784407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Furth",
+        "line": "S3",
+        "ring": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.593129500000032,
+          48.03534011784416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sauerlach",
+        "line": "S3  R",
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.655351700000097,
+          47.973616617844186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Otterfing",
+        "line": "S3  R",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.68234795331955,
+          47.91083013141385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ottobrunn",
+        "line": "S7",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6783679,
+          48.06332640000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wachterhof",
+        "line": "S7",
+        "ring": "5/6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7123464,
+          48.0338231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Durrnhaar",
+        "line": "S7",
+        "ring": "7/8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.736880724552103,
+          47.99354889221098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peis",
+        "line": "S7",
+        "ring": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.776511299999983,
+          47.96018430000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Groshelfendorf",
+        "line": "S7",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7811951,
+          47.94603450000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gronsdorf",
+        "line": "S4,6",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.69880819999998,
+          48.11832055892211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vaterstetten",
+        "line": "S4,6",
+        "ring": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.765261800000014,
+          48.10390245892199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Englschalking",
+        "line": "S8",
+        "ring": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.648451,
+          48.156315100000086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hallbergmoos",
+        "line": "S8",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.71441589999995,
+          48.30934420000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flughafen Besucherpark",
+        "line": "S1,8",
+        "ring": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.764127699999962,
+          48.352063900000076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pullach",
+        "line": "S7,20",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.521794800000071,
+          48.05894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aubing",
+        "line": "S4",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.413298400000036,
+          48.15591320000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Schongeising",
+        "line": "S4",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.190806300000078,
+          48.146891900000014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Turkenfeld",
+        "line": "S4",
+        "ring": "11/12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.078202099999944,
+          48.10477610000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harthaus",
+        "line": "S8",
+        "ring": "4/5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.386785078625225,
+          48.13304771407014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Geisenbrunn",
+        "line": "S8",
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.326086878625125,
+          48.10875271407024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steinebach",
+        "line": "S8",
+        "ring": "9/10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.206542178625062,
+          48.06094161407009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lochham",
+        "line": "S6",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.432741,
+          48.13134180000003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grafelfing",
+        "line": "S6",
+        "ring": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4254623,
+          48.11943220000011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Starnberg Nord",
+        "line": "S6",
+        "ring": "8/9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.347345337901068,
+          48.00571846846734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Possenhofen",
+        "line": "S6",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.305955500000046,
+          47.96155310000012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Feldafing",
+        "line": "S6",
+        "ring": "11/12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.289980600000098,
+          47.94673010000008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harras",
+        "line": "S7  R",
+        "ring": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.536123499999972,
+          48.11694030000007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buchenhain",
+        "line": "S7",
+        "ring": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.496917699999987,
+          48.030842099999916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hohenschaftlarn",
+        "line": "S7",
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.457574700000125,
+          47.99139519999994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grub",
+        "line": "S2",
+        "ring": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.78244799375534,
+          48.164482483433744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Poing",
+        "line": "S2",
+        "ring": "6/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.809766292572021,
+          48.171350065858604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Koloman",
+        "line": "S2",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.88295841217041,
+          48.24367299680193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aufhausen",
+        "line": "S2",
+        "ring": "11/12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.894159317016602,
+          48.27411243327442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grafing Stadt",
+        "line": "S4,6  R",
+        "ring": "10/11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.96296602487564,
+          48.04751934198612
+        ]
+      }
+    }
+  ]
+}
