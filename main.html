@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finding Munich</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery.min.js"></script>
+  <script src="leaflet/leaflet.js"></script>
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+  <script src="r360.js"></script>
+
+
+  <script src="js/leaflet-sidebar.js"></script>
+  <link rel="stylesheet" href="css/leaflet-sidebar2.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <style>
+    html, body {width: 100%; height: 100%; margin: 0}
+    #map {width: 100%; height: 100%;}
+    .lorem {
+      font-style: italic;
+      color: #AAA;
+    }
+    .info {
+      padding: 6px 8px;
+      font: 14px/16px Arial, Helvetica, sans-serif;
+      background: white;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+    .info h4 {
+      margin: 0 0 5px;
+      color: #777;
+    }
+
+    .my-legend {
+      position: absolute;
+      right:  0px;
+      bottom: 0px;
+      height: 130px;
+      width:  165px;
+      z-index: 1;
+      background: #fff;
+      opacity: 0.8;
+      margin: 25px 10px;
+      border-radius:5px;
+      font-family: Arial;
+      font-size: 14px;
+      text-align: center;
+      box-shadow: 2px 2px 10px grey;
+    }
+    .legend-title {
+      padding: 5px 5px 5px;
+    }
+    .legend-scale ul {
+       margin: 0px;
+       padding: 0px 7.5px;
+       float: left;
+       list-style: none;
+    }
+    .legend-scale ul li {
+       display: block;
+       float: left;
+       width: 50px;
+       text-align: center;
+       font-size: 12px;
+    }
+    li span {
+       display: block;
+       float: left;
+       height: 15px;
+       width: 50px;
+    }
+    h4, p, img {
+      margin: 15px 10px;
+      display: inline-block;
+      text-align: center;  
+      width: 22%
+    }
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      max-width: 65% ;
+      border-radius: 5px; 
+      box-shadow: 4px 4px 30px black; 
+      opacity:0.9; 
+      font-family: 'Arial'
+    }
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  </style>
+</head>
+
+<body>
+  <div id="map" style="z-index: 0"></div>
+
+  <script src="jsons/union.json"></script>
+  <script src="jsons/flat.json"></script>
+  <script src="jsons/zimmer1.json"></script>
+  <script src="jsons/boundry_line.json"></script>
+  <script src="jsons/s_line.json"></script>
+  <script src="jsons/s_halt.json"></script>
+  <script src="jsons/u_line.json"></script>
+  <script src="jsons/u_halt.json"></script>
+
+  <script>
+    var defaultApiKey = 'V4VX10KRBZE2TS3LMEQHMPU';
+    var mapboxMapID = 'mi.0ad4304c';
+    var mapboxPublicKey = 'pk.eyJ1IjoibWkiLCJhIjoia1RPVl9ZcyJ9.WrySAsiu-KvK9eYcMScLFQ';
+  </script>
+  
+
+  <!-- isochrone --> 
+  <script>
+    var latlons = {map: [48.1495,11.5681], src1: [48.1495,11.5681]};  
+    var route360map = r360.basemap({style: 'light', apikey: defaultApiKey, attribution: "ÖPNV Daten <a href='https://www.vbb.de/de/index.html' target='_blank'>© VBB</a>, <a href = 'https://www.route360.net'>© Route360°</a> <a href = 'https://openmaptiles.org'>© OpenMapTiles</a> <a href = 'https://www.openstreetmap.org/about'>© OpenStreetMap contributors</a>"});
+    var ostmap = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        id: 'mapbox.light'
+    });
+    var map = L.map('map', {
+        layers: [route360map],
+        zoomControl: false,
+        minZoom: 10,
+        maxZoom: 17,
+    }).setView(latlons.map, 11);
+
+    var sourceMarker1 = L.marker(latlons.src1, { draggable: true }).addTo(map);
+    var polygonLayer = r360.leafletPolygonLayer().addTo(map);
+    polygonLayer.setColors([
+          { 'time': 420, 'opacity': 0.8, 'color': '#08519c' },
+          { 'time': 720, 'opacity': 0.8, 'color': '#3182bd' },
+          { 'time':1020, 'opacity': 0.8, 'color': '#6baed6' },
+    ]);
+
+    // helper function to encapsulate the show polygon action
+    var showPolygons = function(rezoom) {
+      var travelOptions = r360.travelOptions();
+      travelOptions.addSource(sourceMarker1);
+      travelOptions.setTravelTimes([420, 720,1020]);
+      travelOptions.setTravelType('walk');
+      travelOptions.setServiceKey(defaultApiKey);
+      travelOptions.setServiceUrl('https://service.route360.net/germany/');
+      r360.PolygonService.getTravelTimePolygons(travelOptions, function(polygons) {
+        polygonLayer.clearAndAddLayers(polygons);
+      });
+    };
+
+    showPolygons();
+    sourceMarker1.on('dragend', showPolygons);
+
+
+
+
+
+
+//District
+    var D_style = {
+      weight: 0.2,
+      color: '#000000',
+      fillOpacity: 0,
+
+    };
+
+    function D_highlightFeature(e) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 2,
+        color: '#000000',
+        fillOpacity: 0.2
+      });
+
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+      }
+      D_info.update(layer.feature.properties);
+    }
+
+    var District2;
+    function D_resetHighlight(e) {
+      District2.resetStyle(e.target);
+      D_info.update();
+    }
+
+    function D_onEachFeature(feature, layer) {
+      layer.on({
+        mouseover: D_highlightFeature,
+        mouseout: D_resetHighlight,
+      });
+    }
+
+    District2 = L.geoJson(district, {
+      style: D_style,
+      onEachFeature: D_onEachFeature
+    })
+
+    var D_info = L.control();
+    D_info.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'info'); 
+      this.update();
+      return this._div;
+    };
+
+    D_info.update = function (props) {
+      this._div.innerHTML = (props ? props.city + ', ' + props.district : 'Borough / Town(Municipality), City / District');
+    };
+    D_info.addTo(map);
+
+
+
+
+
+//Region
+    var RegionStyle = {
+      color: "#000000",
+      opacity: 0.8,
+      weight: 1,
+      fillOpacity: 0,
+    };
+
+    L.geoJson(planungsregionen, {
+      style: RegionStyle
+    }).addTo(map);
+
+
+
+
+
+//sbahn line
+    var S_info = L.control();
+
+    S_info.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'info');
+      this.update();
+      return this._div;
+    };
+
+    S_info.update = function (props) {
+      this._div.innerHTML = (props ? 'S-Bahn S' + props.line: 'S-Bahn');
+    };
+
+    S_info.addTo(map);
+
+    var SLine_Style = {
+      color: "#3a7726",
+      weight: 2,
+    };
+
+    function highlightFeature_SLine(e) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 4,
+        color: '#000000',
+        opacity: 0.8
+      });
+
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+      }
+      S_info.update(layer.feature.properties);
+    }
+
+    var geojson_Sline;
+
+    function resetHighlight_SLine(e) {
+      geojson_Sline.resetStyle(e.target);
+      S_info.update();
+    }
+
+
+    function onEachFeature_SLine(feature, layer) {
+      layer.on({
+        mouseover: highlightFeature_SLine,
+        mouseout: resetHighlight_SLine,
+      });
+    }
+
+    geojson_Sline = L.geoJson(s_line, {
+      style: SLine_Style,
+      onEachFeature: onEachFeature_SLine
+    }).addTo(map);
+
+
+
+
+
+
+//sbahn halt
+    var SHalt_Style = {
+      radius: 5,
+      fillColor: "#ffffff",
+      color: "#000000",
+      weight: 0.5,
+      opacity: 1,
+      fillOpacity: 1,
+    };
+    
+    function onEachFeature_shalt(feature, layer) {
+      var popup = "";
+      if (feature.properties && feature.properties.name) {popup += feature.properties.line + '</br><b>' + feature.properties.name + '</b><br/>Ring ' + feature.properties.ring;
+      }
+      layer.bindPopup(popup);
+    }
+
+    var s_popup = L.geoJson(s_halt, {
+      pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, SHalt_Style);
+      },
+      onEachFeature: onEachFeature_shalt
+    }).addTo(map);
+
+
+
+
+
+//ubahn line
+    var U_info = L.control();
+
+    U_info.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+      this.update();
+      return this._div;
+    };
+
+// method that we will use to update the control based on feature properties passed
+    U_info.update = function (props) {
+      this._div.innerHTML = (props ? 'U-Bahn U' + props.id: 'U-Bahn');
+    };
+
+    U_info.addTo(map);
+
+    function getColor_ULine(d) {
+      return d > 6 ? '' :
+             d > 5 ? '#1661e5' :
+             d > 4 ? '#ccaa3d' :
+             d > 3 ? '#2dd8c3' : 
+             d > 2 ? '#ffae00' :
+             d > 1 ? '#f23c3c' :
+             d > 0 ? '#2f8c3c' :
+                     '#FFFFFF';
+    }
+  
+    function ULine_Style(feature) {
+      return {
+        color: getColor_ULine(feature.properties.id),
+        weight: 2,
+      };
+    }
+
+    function highlightFeature_ULine(e) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 4,
+        color: '#666',
+      });
+
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+      }
+      U_info.update(layer.feature.properties);
+    }
+
+    var geojson_uline;
+
+    function resetHighlight_ULine(e) {
+      geojson_uline.resetStyle(e.target);
+      U_info.update();
+    }
+
+    function onEachFeature_ULine(feature, layer) {
+      layer.on({
+        mouseover: highlightFeature_ULine,
+        mouseout: resetHighlight_ULine,
+      });
+    }
+
+    geojson_uline = L.geoJson(u_line, {
+      style: ULine_Style,
+      onEachFeature: onEachFeature_ULine
+    }).addTo(map);
+
+
+
+
+
+
+//ubahn halt
+    var UHalt_Style = {
+        radius: 4,
+        fillColor: "#000000",
+        color: "#ffffff",
+        weight: 0.5,
+        opacity: 1,
+        fillOpacity: 1,
+    };
+
+    function onEachFeature_uhalt(feature, layer) {
+      var popup = "";
+      if (feature.properties && feature.properties.name) {
+        popup += 'U' +feature.properties.line + '</br><b>' + feature.properties.name + '</b><br/>Ring ' + feature.properties.ring;
+        }
+      layer.bindPopup(popup);
+    }
+
+    var u_popup =
+    L.geoJson(u_halt, {
+      pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, UHalt_Style);
+      },
+      onEachFeature: onEachFeature_uhalt
+    }).addTo(map);
+
+
+
+
+
+
+//Flat
+    function getColor_Flat(d) {
+      return d >1000 ? '#bd0025' :
+             d > 980 ? '#be0121' : 
+             d > 960 ? '#c0031c' :
+             d > 940 ? '#c20417' :
+             d > 920 ? '#c40612' :
+             d > 900 ? '#c6070e' :
+             d > 880 ? '#c80909' :
+             d > 860 ? '#ca110b' :
+             d > 840 ? '#cc1a0c' : 
+             d > 820 ? '#cd220e' :
+             d > 800 ? '#cf2a10' :
+             d > 780 ? '#d13212' :
+             d > 760 ? '#d33b14' :
+             d > 740 ? '#d54316' :
+             d > 720 ? '#d74b17' :
+             d > 700 ? '#d95419' : 
+             d > 680 ? '#db5c1b' :
+             d > 660 ? '#dd641d' :
+             d > 640 ? '#de6d1f' :
+             d > 620 ? '#e07521' :
+             d > 600 ? '#e27e24' :
+             d > 580 ? '#e48626' :
+             d > 560 ? '#e68f28' :
+             d > 540 ? '#e8972a' :
+             d > 520 ? '#ea9f2c' :
+             d > 500 ? '#eca82e' :
+             d > 480 ? '#eeb031' : 
+             d > 460 ? '#efb933' :
+             d > 440 ? '#f1c135' :
+             d > 420 ? '#f3c938' :
+             d > 400 ? '#f5d23a' :
+             d > 380 ? '#f7da3d' :
+             d > 360 ? '#f9e23f' : 
+             d > 340 ? '#fbea41' :
+             d > 320 ? '#fdf244' :
+             d > 300 ? '#fffb47' :
+                       '#fffb47';
+    }
+  
+    function Flat_Style(feature) {
+      return {
+        color: getColor_Flat(feature.properties.gridcode),
+       fillOpacity: 0.5,
+       weight: 0
+      };
+    }
+
+    function onEachFeature_Flat(feature, layer) {
+      var popup = "";
+      if (feature.properties && feature.properties.gridcode) {
+        popup += "The average price(flatshare) here: €" + feature.properties.gridcode ;
+      }
+      layer.bindPopup(popup);
+    } 
+
+    var Flat_1 = L.geoJson(flat, {
+      style: Flat_Style, 
+      onEachFeature: onEachFeature_Flat
+    });
+
+
+
+
+
+
+//1 zimmer
+    function Zimmer_Style(feature) {
+      return {
+        color: getColor_Flat(feature.properties.gridcode),
+        fillOpacity: 0.5,
+        weight: 0
+      };
+    }
+
+    function onEachFeature_Zimmer(feature, layer) {
+      var popup = "";
+      if (feature.properties && feature.properties.gridcode) {popup += "The average price(1 Room) here: €" + feature.properties.gridcode;}
+      layer.bindPopup(popup);
+    } 
+
+    var Zimmer_1 = L.geoJson(zimmer, {
+      style: Zimmer_Style, 
+      onEachFeature: onEachFeature_Zimmer
+    });
+
+
+
+
+//contro layer
+    var baseMaps = {  
+      "Grayscale": route360map,
+      "OpenStreetMap": ostmap
+    };
+  
+    var checkboxMaps = {
+      "1 Room    - rental price": Zimmer_1,
+      "Flatshare - rental price": Flat_1,
+      "Administrative Division": District2
+    };
+    
+    L.control.layers(baseMaps, checkboxMaps, {position:'topleft'}).addTo(map);
+
+  </script>
+
+
+  <div class='my-legend'>
+    <div class='legend-title'>Walking distance in ~min</div>
+    <div class='legend-scale'>
+      <ul class='legend-labels'>
+        <li><span style='background:#08519c;'></span>5</li>
+        <li><span style='background:#3182bd;'></span>10</li>
+        <li><span style='background:#6baed6;'></span>15</li>
+      </ul>
+    </div>
+    <br/><br/>
+
+    <div class='legend-title'>Rental Price</div>
+    <div class='legend-scale'>
+      <ul style='width:135px; height:15px; margin-left: 6.5px; background:linear-gradient(to left, #BD0026 , #FFFB47);'></ul>
+      <ui style='font-size: 12px'>
+        <ul style='float: left'> 300</ul>
+        <ul style='float:right'>1000</ul>
+      </ui>
+    </div>
+  </div>
+
+
+
+
+
+  <div id='Q' style ='z-index: 2; position:fixed; bottom:20px; left:20px; font-size:30px; opacity:0.6'>
+    <i class="fa fa-question-circle" aria-hidden="true" ></i>
+  </div>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h2 style = 'text-align: center; font-family:Hectiva'>Finding Munich</h2>
+    
+    <div>
+      <h4>Rental Price</h3>
+      <h4>Nearby Places</h3>
+      <h4>Metro Line & Station</h3>
+      <h4>Which City/District?</h3>
+      
+      <p>Change the layer and click on the map. See the price for 1 Room/Flatshare.</p>
+      <p>Move the icon to reposition. The distance is showed by walking distance.</p>
+      <p>Hover on the metro line, and click on the station. See the name and the ring.</p>
+      <p>Hover on the place. Look up the name and the range of the borough/town.</p>
+
+      <img src="price.png">
+      <img src="walk.png">
+      <img src="bahn.png">
+      <img src="district.png">
+    </div>
+
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("Q");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+</html>
