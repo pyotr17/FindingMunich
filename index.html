@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="leaflet/leaflet.css" />
   <script src="js/latest.js"></script>
   <link rel="stylesheet" href="css/font-awesome.min.css">
-
+  <script src="https://unpkg.com/leaflet-geosearch@2.6.0/dist/bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@2.6.0/assets/css/leaflet.css">
   <style>
     html, body {width: 100%; height: 100%; margin: 0}
     #map {width: 100%; height: 100%;}
@@ -169,11 +170,41 @@
 
     showPolygons();
     sourceMarker1.on('dragend', showPolygons);
+    
+    
+    //search
+    var GeoSearchControl = window.GeoSearch.GeoSearchControl;
+    var OpenStreetMapProvider = window.GeoSearch.OpenStreetMapProvider;
+    var provider = new OpenStreetMapProvider({});
+
+    //  Define search controls
+    var searchControl = new GeoSearchControl({
+      provider: provider,
+      style: 'bar',
+      showMarker: true,
+      marker: {
+       draggable: true
+      },
+      autoClose: true,
+      keepResult: true,
+    });
+  
+      // Add searchbar to the map
+    map.addControl(searchControl);
+
+   /* Create new layer for markers  */
+    map.on('geosearch/showlocation', function(e) {
+      $("#lat").val(e.location.y);
+      $("#lng").val(e.location.x);
+    });
+
+    map.on('geosearch/marker/dragend', function(e) {
+      $("#lat").val(parseFloat(e.location.lat));
+      $("#lng").val(parseFloat(e.location.lng));
+    });
 
 
-
-
-//District
+ //District
     var D_style = {
       weight: 0.2,
       color: '#000000',
