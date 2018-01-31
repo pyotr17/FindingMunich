@@ -13,10 +13,6 @@
   <style>
     html, body {width: 100%; height: 100%; margin: 0}
     #map {width: 100%; height: 100%;}
-    .lorem {
-      font-style: italic;
-      color: #AAA;
-    }
     .info {
       padding: 6px 8px;
       font: 14px/16px Arial, Helvetica, sans-serif;
@@ -67,17 +63,24 @@
        height: 15px;
        width: 50px;
     }
-    h4, p, img {
+    h4, img {
       margin: 15px 10px;
       display: inline-block;
       text-align: center;  
-      width: 22%
+      width: 22%;
+      padding-top: 15px;
+    }
+    p {
+      margin: 15px 10px;
+      display: inline-block;
+      width: 22%;
+      font-size: 14px;
     }
     .modal {
       display: none; /* Hidden by default */
       position: fixed; /* Stay in place */
       z-index: 1; /* Sit on top */
-      padding-top: 100px; /* Location of the box */
+      /* Location of the box */
       left: 0;
       top: 0;
       width: 100%; /* Full width */
@@ -88,7 +91,7 @@
     }
     .modal-content {
       background-color: #fefefe;
-      margin: auto;
+      margin:50px auto;
       padding: 20px;
       max-width: 65% ;
       border-radius: 5px; 
@@ -129,7 +132,6 @@
     var mapboxPublicKey = 'pk.eyJ1IjoibWkiLCJhIjoia1RPVl9ZcyJ9.WrySAsiu-KvK9eYcMScLFQ';
   </script>
   
-
   <!-- isochrone --> 
   <script>
     var latlons = {map: [48.1495,11.5681], src1: [48.1495,11.5681]};  
@@ -561,16 +563,21 @@
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 style = 'text-align: center; font-family:Hectiva'>Finding Munich</h2>   
+      <h2 style = 'text-align: center; font-family: Georgia'>Finding Munich</h2>   
       <div>
+        <p style='width: 95%'>The research area is within Greater Munich. It includes the city München, and the districts München, Dachau, Freising, Ebersberg, Erding, Fürstenfeldbruck, Starnberg, and Landsberg  an Lech. The data is from wg-gesucht. Hope you find satisfied accomodation.
+          <br/><br/>* You can interact with the toppest layer wchich being activated at the last moment. 
+          <br/><br/>
+          
+          01.2018</p>
         <h4>Rental Price</h3>
         <h4>Nearby Places</h3>
         <h4>Metro Line & Station</h3>
         <h4>Which City/District?</h3>
-        <p>Change the layer and click on the map. See the price for 1 Room/Flatshare.</p>
+        <p>Change the layer, then click on the map. Find the price for 1 Room / Flatshare.</p>
         <p>Move the icon to reposition. The distance is showed by walking distance.</p>
-        <p>Hover on the metro line, and click on the station. See the name and the ring.</p>
-        <p>Hover on the place. Look up the name and the range of the borough/town.</p>
+        <p>Hover on the metro line, and click on the station. Which ring is within your nearest station?</p>
+        <p>Hover on the place. Look up the name and the range of the borough / town.</p>
         <img src="price.png">
         <img src="walk.png">
         <img src="bahn.png">
