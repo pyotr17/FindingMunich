@@ -1,3 +1,6 @@
 # FindingMunich
-for finding accomodation in Munich, Germany
+
+---Demo---
 https://pyotr17.github.io/FindingMunich/
+
+
